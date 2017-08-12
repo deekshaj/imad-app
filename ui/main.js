@@ -9,5 +9,5 @@ elt.innerHTML='welcome to javascript'
 var ims=document.getElementById('img');
 ims.onclick=function(){
     
-img.style.marginleft="100px";    
+ims.style.marginleft="100px";    
 };
