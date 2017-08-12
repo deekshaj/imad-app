@@ -21,7 +21,7 @@ var articles={
             this is my first creation in the html file.
         </p>`
     
-             },
+ },
      'article-two':{
     title:'Article two | DEEKSHA J',
     heading:'Article two',
@@ -91,9 +91,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one', function (req, res) {
-   res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
-});
+
 
 app.get('/:articleName', function (req, res) {
      //articleName==articleone
