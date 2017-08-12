@@ -2,8 +2,7 @@
 var btn=document.getElementById('counter');
 //var counter=0;
 //submit name
-var nameinput=document.getElementById('txt');
-var name=nameinput.value;
+
 var submit=document.getElementById('submitbtn')
 btn.onclick=function(){
     
@@ -35,12 +34,14 @@ btn.onclick=function(){
         
         
     };
+    var nameinput=document.getElementById('txt');
+var name=nameinput.value;
         //rende the variable in the corect span
        // counter =counter+1;
       //first make a request to the counter end point
     request.open('GET','http://deekshamoily.imad.hasura-app.io/submit-name?name='+name,true);
     request.send(null);
-}
+//}
 //while uing counter
 //submit name
 //var nameinput=document.getElementById('txt');
