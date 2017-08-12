@@ -13,22 +13,22 @@ btn.onclick=function(){
         if(request.readyState === XMLHttpRequest.DONE){
             //take some action
             if(request.status===200){
-                //incrementing counter
-               //var counter= request.responseText;
-              // var spn=document.getElementById('count');   
-//spn.innerHTML=counter.toString();
-  //capture a list of names and render it as a list
-    var names=request.responseText;
-    names=JSON.parse(names);//convert from string to object
-    var list='';
-    for(var i=0;i<names.length;i++)
-    {
-        list += '<li>'+ names[i]+'</li>';
-    }
-    var ul=document.getElementById('namelist');
-    ul.innerHTML=list;
-
-            }
+                    //incrementing counter
+                   //var counter= request.responseText;
+                  // var spn=document.getElementById('count');   
+    //spn.innerHTML=counter.toString();
+      //capture a list of names and render it as a list
+        var names=request.responseText;
+        names=JSON.parse(names);//convert from string to object
+        var list='';
+        for(var i=0;i<names.length;i++)
+        {
+            list += '<li>'+ names[i]+'</li>';
+        }
+        var ul=document.getElementById('namelist');
+        ul.innerHTML=list;
+    
+         }
         }
         //not done yet
         
