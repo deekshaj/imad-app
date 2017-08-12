@@ -23,5 +23,6 @@ spn.innerHTML=counter.toString();
         //rende the variable in the corect span
        // counter =counter+1;
       //first make a request to the counter end point
-    request.open('GET','http://deekshamoily.imad.hasura-app.io/counter',true)
+    request.open('GET','http://deekshamoily.imad.hasura-app.io/counter',true);
+    request.send(null);
 }
