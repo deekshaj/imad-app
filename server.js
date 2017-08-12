@@ -103,9 +103,6 @@ app.get('/:articleName', function (req, res) {
    res.send(createtemplate(articles[articleName]));
 });
 
-app.get('/article-one', function (req, res) {
-   res.send(createtemplate(articleone));
-});
 
 app.get('/article-two', function (req, res) {
   res.send('Artical two requested and will be served here');
