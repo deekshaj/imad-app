@@ -1,21 +1,14 @@
-console.log('Loaded!');
-//change the text of the div element
-var elt=document.getElementById('main-element');
-elt.innerHTML='welcome to javascript'
-
-
-//to move the image
-
-var img=document.getElementById('img');
-var marginLeft=0; //declaring marginLeft variable
-//function moveRight
-function moveRight()
-{
-    marginLeft=marginLeft+10;  //increment by 10
-    img.style.marginLeft=marginLeft+'px';   //merge the 10 with string 
+//counter code
+var btn=document.getElementById('counter');
+var counter=0;
+btn.onclick=function(){
+    
+    //first make a request to the counter end point
+    
+    //capture the response and store in a variable
+    //rende the variable in the corect span
+    counter =counter+1;
+ var spn=document.getElementById('count');   
+spn.innerHTML=counter.toString();
     
 }
-img.onclick=function(){
-    var interval=setInterval(moveRight,200);
-//img.style.marginLeft='100px';    
-};
