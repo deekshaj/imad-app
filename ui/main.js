@@ -26,3 +26,8 @@ spn.innerHTML=counter.toString();
     request.open('GET','http://deekshamoily.imad.hasura-app.io/counter',true);
     request.send(null);
 }
+
+//submit name
+var nameinput=document.getElementById('txt');
+var name=nameinput.value;
+var submit=document.getElementById('submit')
