@@ -6,8 +6,8 @@ elt.innerHTML='welcome to javascript'
 
 //to move the image
 
-var ims=document.getElementById('img');
-ims.onclick=function(){
+var img=document.getElementById('img');
+img.onclick=function(){
     
-ims.style.marginleft="100px";    
+img.style.marginLeft='100px';    
 };
