@@ -2,17 +2,15 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 //creating database pool
-var pool=require('pg').pool
+var pool=require('pg').Pool;
 
 //creating configuration for database
-create config={
+var config={
     user:'deekshamoily',
     database:'deekshamoily',
-    host:'db.imad.hasura-app.io'
-    port:'5432',
+    host:'db.imad.hasura-app.io',
+    port: '5432',
     password:process.env.DB-PASSWORD//this line says use the environment code called db-password
-    
-    
 }
 
 
