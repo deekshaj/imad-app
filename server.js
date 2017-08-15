@@ -2,7 +2,7 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 //creating database pool
-var pool=require('pg').Pool;
+var Pool=require('pg').Pool;
 
 //creating configuration for database
 var config={
