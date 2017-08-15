@@ -105,19 +105,20 @@ app.get('/', function (req, res) {
 
 //create a pool globally so the its for lifetime
 //last as long a your app id running
-var pool=new Pole(config);
+var pool=new Pool(config);
 
 app.get('/test-db',function(req,res){
     //make a select request
     //retuen a response with results
     
-   query.pool('SELECT * FROM TEST',function(err,result){
+   pool.query('SELECT * FROM test',function(err,result){
        if (err)
        {
-           res.status(500).send(err,toString());
+           res.status(500).send(err.toString());
        }else
-       res.send(JSON.strinify(result));
-       
+      {
+          res.send(JSON.stringify(result));
+      }
    });
 });
 
