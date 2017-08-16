@@ -4,7 +4,7 @@ var btn=document.getElementById('counter');
 //submit name
 
 var submit=document.getElementById('submitbtn')
-btn.onclick=function(){
+submit.onclick=function(){
     
    //create request object
     var request=new XMLHttpRequest();
